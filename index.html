@@ -1,0 +1,537 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Sinexio — la plateforme métier des plombiers et des entreprises d’intervention après sinistre. Missions, planning, terrain, rapports IA, devis et factures dans un seul logiciel métier.">
+  <meta name="theme-color" content="#080A22">
+  <title>Sinexio — Moins d'administratif. Plus de terrain.</title>
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='50' fill='%23252949'/%3E%3Cg stroke='%23FF6849' stroke-width='4.6' stroke-linecap='round'%3E%3Cpath d='M49 54.7 30.3 34.2M49 54.7 67.7 34.2M49 54.7 49 79.9'/%3E%3C/g%3E%3Cg fill='%23fff'%3E%3Ccircle cx='30.3' cy='34.2' r='7.3'/%3E%3Ccircle cx='67.7' cy='34.2' r='7.3'/%3E%3Ccircle cx='49' cy='79.9' r='7.3'/%3E%3C/g%3E%3Ccircle cx='49' cy='54.7' r='10.3' fill='%23FF6849'/%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="assets/img/hero-plumber.webp" fetchpriority="high">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ============ fixed layer (outside ScrollSmoother) ============ -->
+<div class="progress" aria-hidden="true"><i></i></div>
+
+<header class="nav" id="nav">
+  <a class="brand" href="#top" aria-label="Sinexio — accueil">
+    <svg class="mark" viewBox="0 0 100 100" aria-hidden="true">
+      <circle class="mark-plate" cx="50" cy="50" r="50"/>
+      <g stroke="#FF6849" stroke-width="4.6" stroke-linecap="round">
+        <path d="M49 54.7 30.3 34.2"/><path d="M49 54.7 67.7 34.2"/><path d="M49 54.7 49 79.9"/>
+      </g>
+      <g class="mark-nodes"><circle cx="30.3" cy="34.2" r="7.3"/><circle cx="67.7" cy="34.2" r="7.3"/><circle cx="49" cy="79.9" r="7.3"/></g>
+      <circle cx="49" cy="54.7" r="10.3" fill="#FF6849"/>
+    </svg>
+    <span class="wordmark">sinexio</span>
+  </a>
+
+  <nav class="nav-links" aria-label="Sections">
+    <a href="#logiciel">Le logiciel</a>
+    <a href="#tournees">Tournées</a>
+    <a href="#terrain">Terrain</a>
+    <a href="#ia">Rapports IA</a>
+    <a href="#gestion">Gestion</a>
+  </nav>
+
+  <a class="nav-cta magnetic" href="#contact">Réserver une démo</a>
+
+  <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="drawer">
+    <i></i><i></i>
+  </button>
+</header>
+
+<div class="drawer" id="drawer" hidden>
+  <nav aria-label="Menu principal">
+    <a href="#logiciel"><span>01</span>Le logiciel</a>
+    <a href="#tournees"><span>02</span>Tournées</a>
+    <a href="#terrain"><span>03</span>Terrain</a>
+    <a href="#ia"><span>04</span>Rapports IA</a>
+    <a href="#gestion"><span>05</span>Gestion</a>
+    <a class="drawer-cta" href="#contact">Réserver une démo</a>
+  </nav>
+</div>
+
+<div id="smooth-wrapper">
+<div id="smooth-content">
+
+<main id="top">
+
+  <!-- ══════════════ HERO — dark, photographic ══════════════ -->
+  <section class="hero">
+    <div class="hero-media">
+      <img src="assets/img/hero-plumber.webp" alt="Un plombier répare une arrivée d’eau sous un lavabo, éclairé par une lampe de chantier." fetchpriority="high" width="2400" height="1029">
+    </div>
+    <div class="hero-scrim" aria-hidden="true"></div>
+
+    <div class="hero-inner">
+      <p class="eyebrow"><span class="pulse"></span>La plateforme métier</p>
+
+      <h1 class="hero-title">
+        <span class="line"><span>Moins</span></span>
+        <span class="line"><span>d’administratif.</span></span>
+        <span class="line accent"><span>Plus de terrain.</span></span>
+        <span class="line"><span>Plus de rentabilité.</span></span>
+      </h1>
+
+      <p class="hero-lede">Sinexio est la plateforme métier conçue pour simplifier le quotidien des plombiers et des entreprises spécialisées dans les interventions après sinistre.</p>
+      <p class="hero-lede hero-lede-2">Vous collaborez avec des assisteurs, des assureurs ou encore des syndics de copropriété ? Sinexio se configure selon les attentes spécifiques de chacun de vos donneurs d’ordre.</p>
+
+      <div class="hero-actions">
+        <a class="btn btn-solid magnetic" href="#contact">Réserver une démo</a>
+        <a class="btn btn-line" href="#logiciel">Découvrir le logiciel</a>
+      </div>
+    </div>
+
+    <a class="cue" href="#logiciel"><span>Explorer</span><i></i></a>
+  </section>
+
+
+  <!-- ══════════════ WHITE BODY starts here ══════════════ -->
+
+  <!-- ─────── Origin + the product itself ─────── -->
+  <section class="intro" id="logiciel">
+    <div class="intro-icons" aria-hidden="true">
+      <span class="intro-icon icon-wrench">
+        <picture>
+          <source media="(prefers-reduced-motion: reduce)" srcset="assets/img/intro-wrench-still.png?v=2">
+          <img src="assets/img/intro-wrench.gif?v=2" width="320" height="320" alt="" loading="lazy" decoding="async">
+        </picture>
+      </span>
+      <span class="intro-icon icon-gear">
+        <picture>
+          <source media="(prefers-reduced-motion: reduce)" srcset="assets/img/intro-gears-still.png?v=2">
+          <img src="assets/img/intro-gears.gif?v=2" width="320" height="320" alt="" loading="lazy" decoding="async">
+        </picture>
+      </span>
+    </div>
+    <p class="origin">
+      Pensé à partir de l’expérience réelle d’une entreprise de plomberie gérant
+      <strong>plusieurs centaines de dossiers par mois</strong> depuis plusieurs années, Sinexio rassemble dans un seul
+      outil tout ce dont vous avez besoin pour gérer vos interventions.
+    </p>
+
+    <div class="cockpit-stage">
+      <div class="dashboard" role="img" aria-label="Aperçu du tableau de bord Sinexio : raccourcis, chiffre d’affaires, devis et interventions, charge par technicien et carte des véhicules en temps réel.">
+        <div class="crm-bar" aria-hidden="true">
+          <span class="crm-dots"><i></i><i></i><i></i></span>
+          <span class="crm-url">app.sinexio.fr</span>
+        </div>
+
+        <div class="crm" aria-hidden="true">
+          <aside class="crm-side">
+            <div class="crm-logo">
+              <svg class="mark" viewBox="0 0 100 100">
+                <circle cx="50" cy="50" r="50" fill="#22264C"/>
+                <g stroke="#FF6849" stroke-width="4.6" stroke-linecap="round"><path d="M49 54.7 30.3 34.2"/><path d="M49 54.7 67.7 34.2"/><path d="M49 54.7 49 79.9"/></g>
+                <g fill="#fff"><circle cx="30.3" cy="34.2" r="7.3"/><circle cx="67.7" cy="34.2" r="7.3"/><circle cx="49" cy="79.9" r="7.3"/></g>
+                <circle cx="49" cy="54.7" r="10.3" fill="#FF6849"/>
+              </svg>
+              <span>sinexio</span>
+            </div>
+
+            <nav class="crm-nav">
+              <span class="on"><svg viewBox="0 0 24 24"><path d="M4 11 12 4l8 7v9h-5v-6H9v6H4z"/></svg>Accueil</span>
+              <span><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="3.5"/><path d="M5 20c1-4 4-6 7-6s6 2 7 6"/></svg>Clients</span>
+              <span><svg viewBox="0 0 24 24"><path d="M14.5 5.5a3.5 3.5 0 0 0 4.7 4.7L21 12l-9 9-3-3 9-9z"/><path d="M6 14l4 4-3 3-4-4z"/></svg>Interventions</span>
+              <span><svg viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M4 10h16M9 3v4M15 3v4"/></svg>Agenda</span>
+              <span><svg viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="14" rx="2"/><path d="M4 10h16M8 14h3"/></svg>Comptabilité</span>
+              <span><svg viewBox="0 0 24 24"><path d="M4 20h16M6 16l4-5 3 3 5-7"/></svg>Statistiques</span>
+              <span><svg viewBox="0 0 24 24"><path d="M5 18h14M7 18l2-9h6l2 9M9.5 9 12 4l2.5 5"/></svg>Techniciens</span>
+              <span><svg viewBox="0 0 24 24"><rect x="4" y="6" width="16" height="13" rx="2"/><path d="M4 11h16M10 15h4"/></svg>Fournisseurs</span>
+              <span><svg viewBox="0 0 24 24"><path d="M3 12l4-3 4 3 4-3 6 4M7 16l3 2M11 15l3 2"/></svg>Partenaires</span>
+              <span><svg viewBox="0 0 24 24"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7"/><circle cx="7" cy="17.5" r="1.8"/><circle cx="17" cy="17.5" r="1.8"/></svg>Véhicules</span>
+              <span><svg viewBox="0 0 24 24"><path d="M5 20V5h9v15M14 9h5v11M8 8h3M8 12h3M8 16h3"/></svg>Nos infos</span>
+              <span><svg viewBox="0 0 24 24"><circle cx="10" cy="8" r="3.5"/><path d="M3 20c1-4 4-6 7-6 1.5 0 3 .4 4 1.2M16 16h5M18.5 13.5v5"/></svg>Comptes</span>
+            </nav>
+
+            <div class="crm-user">
+              <div class="crm-who"><span class="crm-avatar">A</span><div><b>Alex</b><small>Administrateur</small></div></div>
+              <span class="crm-logout">Se déconnecter</span>
+            </div>
+          </aside>
+
+          <div class="crm-main">
+            <div class="crm-head">
+              <div>
+                <h3>Bonjour Alex ! 👋</h3>
+                <small>Voici ce qui se passe aujourd’hui.</small>
+              </div>
+              <div class="crm-head-r">
+                <span class="crm-bell"><svg viewBox="0 0 24 24"><path d="M6 16V11a6 6 0 0 1 12 0v5l1.5 2h-15zM10 20.5h4"/></svg><b>12</b></span>
+                <span class="crm-company">Votre entreprise <svg viewBox="0 0 24 24"><path d="m7 10 5 5 5-5"/></svg></span>
+              </div>
+            </div>
+
+            <div class="crm-row1">
+              <div class="crm-card crm-quick">
+                <h4>Raccourcis rapides</h4>
+                <span class="crm-btn crm-btn-primary">+ Créer un client</span>
+                <span class="crm-btn crm-btn-ghost">+ Créer une intervention <svg viewBox="0 0 24 24"><path d="m7 10 5 5 5-5"/></svg></span>
+                <span class="crm-search"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6"/><path d="m20 20-4.5-4.5"/></svg>Rechercher un client…</span>
+                <span class="crm-wait"><span>⏳ Clients en attente</span><b>3</b></span>
+              </div>
+
+              <div class="crm-card crm-ca">
+                <small>CA journalier <i>i</i></small>
+                <strong class="is-green"><span data-count="1240" data-group="1">0</span> €</strong>
+                <div class="crm-ca-foot">
+                  <span>Aujourd’hui</span>
+                  <svg viewBox="0 0 90 30" preserveAspectRatio="none"><path d="M0 26 L20 22 L38 24 L55 14 L72 16 L90 6" fill="none" stroke="#2FA66A" stroke-width="1.6"/></svg>
+                </div>
+              </div>
+
+              <div class="crm-card crm-ca">
+                <small>CA mensuel <i>i</i></small>
+                <strong class="is-blue"><span data-count="28460" data-group="1">0</span> €</strong>
+                <div class="crm-ca-foot">
+                  <span><em class="crm-up">↑ 12 %</em> vs mois dernier</span>
+                  <svg viewBox="0 0 90 30" preserveAspectRatio="none"><path d="M0 24 L18 20 L34 22 L50 12 L64 15 L78 8 L90 4" fill="none" stroke="#3E6BE6" stroke-width="1.6"/></svg>
+                </div>
+              </div>
+            </div>
+
+            <div class="crm-row2">
+              <div class="crm-stat s-violet">
+                <span class="crm-ico"><svg viewBox="0 0 24 24"><path d="M6 3h8l4 4v14H6z"/><path d="M14 3v4h4"/></svg></span>
+                <div><strong>6</strong><small>Devis en cours</small></div>
+                <em>Voir la liste →</em>
+              </div>
+              <div class="crm-stat s-orange">
+                <span class="crm-ico"><svg viewBox="0 0 24 24"><rect x="6" y="3" width="12" height="18" rx="2"/><path d="M9 8h6M9 12h6M9 16h3"/></svg></span>
+                <div><strong>4</strong><small>Inters à facturer</small></div>
+                <em>Voir la liste →</em>
+              </div>
+              <div class="crm-stat s-blue">
+                <span class="crm-ico"><svg viewBox="0 0 24 24"><path d="M4 20l4-1 11-11-3-3L5 16z"/></svg></span>
+                <div><strong>12</strong><small>Devis à faire</small></div>
+                <em>Voir la liste →</em>
+              </div>
+              <div class="crm-stat s-rose">
+                <span class="crm-ico"><svg viewBox="0 0 24 24"><path d="M12 21s-6-5.5-6-11a6 6 0 0 1 12 0c0 5.5-6 11-6 11z"/><circle cx="12" cy="10" r="2.2"/></svg></span>
+                <div><strong>5</strong><small>Inters à affecter</small></div>
+                <em>Voir la liste →</em>
+              </div>
+              <div class="crm-stat s-green">
+                <h5>Interventions affectées</h5>
+                <ul>
+                  <li>Aujourd’hui<b>9</b></li>
+                  <li>Cette semaine<b>41</b></li>
+                  <li>Ce mois<b>163</b></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="crm-row3">
+              <div class="crm-card crm-techs">
+                <div class="crm-card-h">
+                  <h4>Interventions par technicien</h4>
+                  <span class="crm-legend"><i class="d-blue"></i>Jour <i class="d-orange"></i>Sem. <i class="d-green"></i>Mois</span>
+                </div>
+                <ul>
+                  <li><span class="crm-av">KB</span><div><b>Karim B.</b><small>Véhicule : FA-263-WE</small></div><em class="n-blue">3</em><em class="n-orange">14</em><em class="n-green">52</em><i>›</i></li>
+                  <li><span class="crm-av">JM</span><div><b>Julien M.</b><small>Véhicule : GH-518-KT</small></div><em class="n-blue">2</em><em class="n-orange">11</em><em class="n-green">47</em><i>›</i></li>
+                  <li><span class="crm-av">SL</span><div><b>Sofiane L.</b><small>Véhicule : EK-904-PR</small></div><em class="n-blue">3</em><em class="n-orange">9</em><em class="n-green">38</em><i>›</i></li>
+                  <li><span class="crm-av">TR</span><div><b>Thomas R.</b><small>Véhicule : FD-127-SN</small></div><em class="n-blue">1</em><em class="n-orange">7</em><em class="n-green">26</em><i>›</i></li>
+                </ul>
+              </div>
+
+              <div class="crm-card crm-map">
+                <div class="crm-card-h">
+                  <h4>Carte des véhicules en temps réel</h4>
+                  <span class="crm-link">Vue détaillée →</span>
+                </div>
+                <div class="crm-map-sub">
+                  <span>6 véhicule(s) localisé(s) · màj à l’instant</span>
+                  <span class="crm-map-keys"><i class="d-green"></i>en route <i class="d-grey"></i>à l’arrêt <b>Rafraîchir</b></span>
+                </div>
+                <div class="crm-map-canvas">
+                  <svg viewBox="0 0 440 264" preserveAspectRatio="xMidYMid slice">
+                    <rect width="440" height="264" fill="#AAD3DF"/>
+                    <polygon fill="#F2EFE9" points="0,0 162.8,0 162.8,55.8 110,71.3 66,77.5 6.6,93 0,95"/>
+                    <polygon fill="#F2EFE9" stroke="#C9B7CF" stroke-width="1" stroke-dasharray="3 2" points="187,58.9 211.2,49.6 233.2,3.1 237.6,0 440,0 440,270 281.6,269.7 286,248 281.6,217 264,204.6 283.8,176.7 299.2,167.4 312.4,124 259.6,108.5 224.4,94.6"/>
+                    <polygon fill="#F7F4EE" stroke="#C9B7CF" stroke-width="1" points="187,58.9 224.4,94.6 259.6,108.5 312.4,124 299.2,167.4 283.8,176.7 264,204.6 281.6,217 286,248 281.6,269.7 99,269.7 105.6,217 83.6,182.9 28.6,158.1 26.4,142.6 66,130.2 96.8,133.3 90.2,102.3 105.6,111.6 136.4,108.5 165,86.8 167.2,65.1"/>
+                    <g fill="none" stroke="#F4C77A" stroke-width="1.6" stroke-linecap="round">
+                      <path d="M199 74 L184 129 L238 225"/><path d="M184 129 L98 180"/><path d="M184 129 L302 137"/><path d="M98 180 L95 152 L184 129"/><path d="M184 129 L174 158 L119 253"/>
+                    </g>
+                    <g fill="#57586A" font-family="DM Sans, sans-serif" font-size="8.5">
+                      <text x="190" y="120">Paris</text><text x="104" y="190">Nantes</text><text x="72" y="150">Rennes</text>
+                      <text x="205" y="72">Lille</text><text x="244" y="232">Lyon</text><text x="276" y="147">Strasbourg</text>
+                    </g>
+                    <g fill="#8A7E92" font-family="DM Sans, sans-serif" font-size="9.5" font-style="italic">
+                      <text x="232" y="60">Belgique</text><text x="340" y="80">Allemagne</text><text x="318" y="210">Suisse</text><text x="150" y="190">France</text><text x="60" y="40">Royaume-Uni</text>
+                    </g>
+                    <g stroke="#fff" stroke-width="2">
+                      <circle cx="186" cy="130" r="5" fill="#2FA66A"/><circle cx="195" cy="137" r="5" fill="#6B6F80"/>
+                      <circle cx="174" cy="158" r="5" fill="#2FA66A"/><circle cx="98" cy="181" r="5" fill="#6B6F80"/>
+                      <circle cx="238" cy="224" r="5" fill="#2FA66A"/><circle cx="199" cy="75" r="5" fill="#2FA66A"/>
+                    </g>
+                  </svg>
+                  <span class="crm-zoom"><b>+</b><b>−</b></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ─────── 01 · Un seul logiciel métier pour tout gérer ─────── -->
+  <section class="chain">
+    <div class="chain-head">
+      <p class="label"><b>01</b>Un seul logiciel métier pour tout gérer</p>
+      <h2 class="h-display">Vous recevez une mission ?<br><span>Sinexio vous accompagne jusqu’à sa clôture.</span></h2>
+    </div>
+
+    <div class="chain-viewport">
+      <ol class="chain-track">
+        <li class="step">
+          <span class="step-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 3h8l4 4v14H6z"/><path d="M14 3v4h4M9 12h6M9 16h4"/></svg></span>
+          <b class="step-n">01</b><h3>Réception de la mission</h3>
+          <p>Le BI, la fiche de travaux ou l’ordre de mission reçu en PDF s’importe directement dans Sinexio : plus besoin de ressaisir les informations de l’intervention.</p>
+        </li>
+        <li class="step">
+          <span class="step-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 7v5l3 2"/><circle cx="12" cy="12" r="8"/></svg></span>
+          <b class="step-n">02</b><h3>Prise de rendez-vous</h3>
+          <p>L’agenda intelligent vous propose le prochain créneau disponible au plus proche de l’adresse de la nouvelle intervention.</p>
+        </li>
+        <li class="step">
+          <span class="step-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="15" rx="2.5"/><path d="M4 10h16M9 3v4M15 3v4"/></svg></span>
+          <b class="step-n">03</b><h3>Planning</h3>
+          <p>Une fois créée et affectée, l’intervention arrive directement sur le planning du technicien.</p>
+        </li>
+        <li class="step">
+          <span class="step-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M14.5 5.5a3.5 3.5 0 0 0 4.7 4.7L21 12l-9 9-3-3 9-9z"/><path d="M6 14l4 4-3 3-4-4z"/></svg></span>
+          <b class="step-n">04</b><h3>Intervention</h3>
+          <p>Le technicien renseigne les éléments nécessaires au suivi du dossier et à la génération d’un rapport d’intervention amélioré et paramétré avec l’IA. Les photos et documents sont horodatés et rattachés automatiquement au dossier.</p>
+        </li>
+        <li class="step">
+          <span class="step-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="6" width="13" height="12" rx="2.5"/><path d="m16 10.5 5-3v9l-5-3"/></svg></span>
+          <b class="step-n">05</b><h3>Visio</h3>
+          <p>Le technicien a également la possibilité d’effectuer l’intervention en visioconférence.</p>
+        </li>
+      </ol>
+    </div>
+
+    <div class="chain-rail" aria-hidden="true"><i></i></div>
+  </section>
+
+
+  <!-- ─────── what Sinexio replaces ─────── -->
+  <section class="replace-band" id="replace" aria-label="Un seul logiciel métier remplace les outils dispersés">
+    <div class="replace">
+      <svg class="replace-connections" viewBox="0 0 1000 360" preserveAspectRatio="none" aria-hidden="true">
+        <path class="connection-path" d="M272 50 C370 50 400 130 472 170"/>
+        <path class="connection-path" d="M272 115 C370 115 405 155 472 175"/>
+        <path class="connection-path" d="M272 180 C370 180 405 180 472 180"/>
+        <path class="connection-path" d="M272 245 C370 245 405 205 472 185"/>
+        <path class="connection-path" d="M272 310 C370 310 400 230 472 190"/>
+        <path class="connection-path" d="M728 83 C630 83 600 140 528 172"/>
+        <path class="connection-path" d="M728 148 C630 148 605 170 528 177"/>
+        <path class="connection-path" d="M728 212 C630 212 605 190 528 183"/>
+        <path class="connection-path" d="M728 277 C630 277 600 220 528 188"/>
+      </svg>
+      <div class="replace-old">
+        <span class="old-chip">Tableurs Excel</span>
+        <span class="old-chip">Ressaisies</span>
+        <span class="old-chip">Google Agenda</span>
+        <span class="old-chip">Comptabilité : devis et factures</span>
+        <span class="old-chip">Logiciel de rapport d’intervention</span>
+        <span class="old-chip">Logiciel de visio</span>
+        <span class="old-chip">Signature électronique des documents</span>
+        <span class="old-chip">Géolocalisation des techniciens</span>
+        <span class="old-chip">Pilotage de la société</span>
+      </div>
+      <div class="replace-new">
+        <svg class="mark" viewBox="0 0 100 100" aria-hidden="true">
+          <circle cx="50" cy="50" r="50" fill="#2A2E52"/>
+          <g stroke="#FF6849" stroke-width="4.6" stroke-linecap="round"><path d="M49 54.7 30.3 34.2"/><path d="M49 54.7 67.7 34.2"/><path d="M49 54.7 49 79.9"/></g>
+          <g fill="#fff"><circle cx="30.3" cy="34.2" r="7.3"/><circle cx="67.7" cy="34.2" r="7.3"/><circle cx="49" cy="79.9" r="7.3"/></g>
+          <circle cx="49" cy="54.7" r="10.3" fill="#FF6849"/>
+        </svg>
+        <p>Un seul logiciel métier</p>
+      </div>
+    </div>
+    <p class="replace-note">Plus besoin de multiplier les logiciels, les tableaux Excel et les ressaisies.</p>
+  </section>
+
+
+  <!-- ─────── 02 · Tournées ─────── -->
+  <section class="feature" id="tournees">
+    <div class="feature-copy">
+      <p class="label"><b>02</b>Des tournées mieux organisées</p>
+      <h2 class="h-display">L’agenda connaît<br><span>vos adresses.</span></h2>
+      <p class="lede">L’agenda intelligent prend en compte les adresses des interventions et vous aide à proposer les créneaux les plus pertinents.</p>
+      <ul class="ticks">
+        <li>Moins de kilomètres inutiles</li>
+        <li>Moins de temps perdu sur la route</li>
+        <li>Davantage d’interventions réalisables dans une journée</li>
+      </ul>
+    </div>
+
+    <div class="feature-ui">
+      <div class="ui-card agenda">
+        <div class="ui-head">
+          <span class="ui-title">Mardi 15 septembre</span>
+          <span class="tag tag-ok">Tournée optimisée</span>
+        </div>
+        <div class="agenda-body">
+          <ol class="slots">
+            <li><time>08:30</time><div><b>Recherche de fuite</b><small>Rezé · 4,2 km</small></div></li>
+            <li class="now"><time>09:30</time><div><b>Dégât des eaux</b><small>Nantes · 2,1 km</small></div></li>
+            <li><time>11:00</time><div><b>Remise en état</b><small>Nantes · 1,4 km</small></div></li>
+            <li><time>14:15</time><div><b>Préqualification</b><small>Visio · 0 km</small></div></li>
+          </ol>
+          <div class="agenda-map">
+            <svg viewBox="0 0 220 240" preserveAspectRatio="none" aria-hidden="true">
+              <g stroke="#DDE0E7" stroke-width="8" stroke-linecap="round">
+                <path d="M-20 170 L150 60"/><path d="M40 260 L200 120"/><path d="M-10 80 L120 250"/>
+              </g>
+              <path class="route-line" d="M34 44 C 80 70, 60 140, 112 150 S 176 120, 188 196" fill="none" stroke="#FF6849" stroke-width="4.5" stroke-linecap="round"/>
+            </svg>
+            <i class="pin" style="left:12%;top:14%"></i>
+            <i class="pin" style="left:48%;top:60%"></i>
+            <i class="pin" style="left:82%;top:80%"></i>
+            <span class="map-badge">− 37 km / jour</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ─────── 03 · Terrain ─────── -->
+  <section class="feature reverse" id="terrain">
+    <div class="feature-copy">
+      <p class="label"><b>03</b>Tout est dans la poche du technicien</p>
+      <h2 class="h-display">Le dossier complet,<br><span>sur son téléphone.</span></h2>
+      <p class="lede">Depuis son téléphone ou sa tablette, le technicien retrouve son planning et toutes les informations nécessaires à son intervention. Sur place, il renseigne les éléments techniques, ajoute ses photos et transmet immédiatement son compte rendu. Il peut aussi générer, si besoin, un lien de paiement sécurisé et faire signer électroniquement les documents.</p>
+      <p class="lede">Le back-office récupère les informations en temps réel, sans attendre le retour du technicien.</p>
+    </div>
+
+    <div class="feature-ui">
+      <div class="phone-photo-stage reveal-media">
+        <img src="assets/img/_unused/terrain.webp" alt="Un technicien consulte son dossier d’intervention sur son téléphone, sur place.">
+        <div class="phone-photo-badge"><span class="live-dot"></span>Dossier synchronisé en temps réel</div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ─────── 04 · Rapports IA ─────── -->
+  <section class="feature" id="ia">
+    <div class="feature-copy">
+      <p class="label"><b>04</b>Des rapports plus rapides grâce à l’IA</p>
+      <h2 class="h-display">Le rapport s’écrit<br><span>pendant l’intervention.</span></h2>
+      <p class="lede">Sinexio aide le technicien à produire des rapports structurés, complets et homogènes. Les rapports peuvent être paramétrés selon les informations demandées par chaque donneur d’ordre.</p>
+      <p class="outcome">Moins de rapports incomplets <em>=</em> moins de retours et moins de temps perdu.</p>
+    </div>
+
+    <div class="feature-ui">
+      <div class="report-photo-stage reveal-media">
+        <img src="assets/img/_unused/rapport.webp" alt="Un technicien finalise un rapport d’intervention depuis son véhicule.">
+        <div class="report-delivery-card">
+          <div class="delivery-top"><span class="delivery-check">✓</span><span>Rapport envoyé</span><time>14:32</time></div>
+          <strong>Dégât des eaux</strong>
+          <p>Le compte rendu complet a été transmis au client.</p>
+          <div class="delivery-meta"><span>12 photos jointes</span><span>PDF sécurisé</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════ CLOSING — dark, photographic ══════════════ -->
+  <section class="closing" id="gestion">
+    <div class="closing-media">
+      <img src="assets/img/van.webp" alt="Un fourgon d’intervention stationné sur un quai mouillé à l’heure bleue." width="2400" height="1029" data-speed="0.8" loading="lazy">
+    </div>
+    <div class="closing-scrim" aria-hidden="true"></div>
+    <div class="closing-inner">
+      <p class="label centered">Sinexio</p>
+      <h2 class="closing-title">
+        <span class="line"><span>Votre entreprise</span></span>
+        <span class="line accent"><span>dans un seul logiciel.</span></span>
+      </h2>
+      <p class="lede">Plus simple à gérer. Plus rapide sur le terrain. Moins coûteux que la multitude de logiciels et d’applis que vous utilisez aujourd’hui pour gérer votre quotidien. Plus professionnel auprès des donneurs d’ordre. Et surtout : plus de temps pour réaliser des interventions et développer votre chiffre d’affaires.</p>
+    </div>
+  </section>
+
+
+  <!-- ══════════════ CONTACT — dark ══════════════ -->
+  <section class="contact" id="contact">
+    <div class="contact-copy">
+      <p class="label"><b>05</b>Passez à l’action</p>
+      <h2 class="h-display">Voyez Sinexio<br><span>en situation réelle.</span></h2>
+      <p class="lede">Réservez une démonstration personnalisée et découvrez comment réduire l’administratif sans ralentir vos équipes.</p>
+      <p class="contact-alt">Vous préférez nous joindre ? Envoyez un SMS pour demander une démo au <a href="sms:+33623632242">06&nbsp;23&nbsp;63&nbsp;22&nbsp;42</a></p>
+    </div>
+
+    <form class="form" name="demo-sinexio" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+      <input type="hidden" name="form-name" value="demo-sinexio">
+      <p aria-hidden="true" style="position:absolute;left:-10000px;width:1px;height:1px;overflow:hidden;">
+        <label>Ne pas remplir ce champ<input type="text" name="bot-field" tabindex="-1" autocomplete="off"></label>
+      </p>
+      <label>
+        <span>Prénom et nom</span>
+        <input type="text" name="fullName" placeholder="Jean Dupont" autocomplete="name" maxlength="100" required>
+      </label>
+      <label>
+        <span>Email professionnel</span>
+        <input type="email" name="email" placeholder="jean@entreprise.fr" autocomplete="email" maxlength="254" required>
+      </label>
+      <label>
+        <span>Entreprise</span>
+        <input type="text" name="company" placeholder="Nom de l’entreprise" autocomplete="organization" maxlength="150" required>
+      </label>
+      <!-- Optional Netlify reCAPTCHA v2: add data-netlify-recaptcha="true" to
+           this <form>, then uncomment the next element. Also allow Google's
+           reCAPTCHA script/frame origins in the Content-Security-Policy. -->
+      <!-- <div class="form-captcha" data-netlify-recaptcha="true"></div> -->
+      <button class="btn btn-solid submit magnetic" type="submit">Réserver ma démo</button>
+      <p class="form-note" role="status" aria-live="polite"></p>
+    </form>
+  </section>
+
+</main>
+
+<footer>
+  <a class="brand" href="#top" aria-label="Sinexio — accueil">
+    <svg class="mark" viewBox="0 0 100 100" aria-hidden="true">
+      <circle class="mark-plate" cx="50" cy="50" r="50"/>
+      <g stroke="#FF6849" stroke-width="4.6" stroke-linecap="round"><path d="M49 54.7 30.3 34.2"/><path d="M49 54.7 67.7 34.2"/><path d="M49 54.7 49 79.9"/></g>
+      <g class="mark-nodes"><circle cx="30.3" cy="34.2" r="7.3"/><circle cx="67.7" cy="34.2" r="7.3"/><circle cx="49" cy="79.9" r="7.3"/></g>
+      <circle cx="49" cy="54.7" r="10.3" fill="#FF6849"/>
+    </svg>
+    <span>
+      <span class="wordmark">sinexio</span>
+      <small>Gestion de sinistres, connectée</small>
+    </span>
+  </a>
+  <nav class="footer-links" aria-label="Pied de page">
+    <a href="#logiciel">Le logiciel</a>
+    <a href="#terrain">Terrain</a>
+    <a href="#contact">Démo</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <p class="footer-note">© 2026 Sinexio</p>
+</footer>
+
+</div><!-- /#smooth-content -->
+</div><!-- /#smooth-wrapper -->
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollSmoother.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
